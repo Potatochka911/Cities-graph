@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>main</title>
+	<link rel="stylesheet" href="../css/base.css?t=0">
+	<link rel="stylesheet" href="../css/main.css?t=0">
+	<script type="text/javascript" src="https://unpkg.com/chart.js@3.5.0/dist/chart.min.js" defer></script>
+	<script type="text/javascript" src="https://raw.githubusercontent.com/RFUNN/JSON_Data/main/climate.json" defer></script>
+	<script type="text/javascript" src="../js/main.js" defer></script>
+</head>
+<body>
+	<header>
+		
+	</header>
+	
+	<main>
+		<div class="canvas-parent">
+			<div class="child n1">
+				<center>
+					<canvas id="bar-chart"> Содержание </canvas>
+				</center>
+				<div class="control-panel">
+					<button class="city prev" onclick="citySwitch(-1)">previous city</button>
+					<button class="city active">mode</button>
+					<button class="city next" onclick="citySwitch(1)">next city</button>
+				</div>
+			</div>
+
+			<div class="child n2">
+				<center>
+					<h3>Temperature</h3>
+					<table id="my_data" cellpadding="7"></table>
+				</center>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		
+	</footer>
+
+</body>
+</html>

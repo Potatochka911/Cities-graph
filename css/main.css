@@ -1,0 +1,58 @@
+main
+{
+	height: 100%;
+}
+
+.canvas-parent
+{
+	display: flex;
+	flex-direction: row;
+	height: 80%;
+}
+
+.child
+{
+	flex-grow: 1;
+}
+
+
+.child.n1 
+{
+	center
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.control-panel
+	{
+		display: flex;
+		justify-content: end;
+		gap: 10px;
+	}
+}
+
+button
+{
+	background: none;
+	box-shadow: none;
+	border: 1px solid #000;
+	border-radius: 100px;
+	padding: 0.1em 0.3em;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+}
+
+button.city.active
+{
+	width: 120px;
+	height: 3em;
+}
+
+
+canvas
+{
+/*	height: 500px !important;*/
+	width: 100% !important;
+}
